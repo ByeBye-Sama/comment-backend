@@ -1,0 +1,46 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sqlize-init": "sequelize init:models",
+    "sqlize-migrate": "sequelize db:migrate",
+    "test": "jest",
+    "dev": "nodemon start.js",
+    "start": "node start.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-boost": "^0.4.3",
+    "apollo-server-express": "^2.7.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "graphql": "^14.4.2",
+    "graphql-tag": "^2.10.1",
+    "graphql-tools": "^4.0.5",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.10.1",
+    "sequelize-cli": "^5.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/register": "^7.4.4",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^24.8.0",
+    "bili": "^4.8.0",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "regenerator-runtime": "^0.13.2",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "testRegex": "(/test/.*-test|(\\.|/)(test|spec))\\.jsx?$"
+  }
+}

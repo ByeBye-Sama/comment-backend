@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "riqratest",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "a6qIXSxpHekMjKd9VkdG",
+    "database": "innodb",
+    "host": "entregodb-1.c7jeex1rjabv.us-east-2.rds.amazonaws.com",
+    "port": "3306",
+    "dialect": "mysql"
+  }
+}
