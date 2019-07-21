@@ -8,7 +8,7 @@
     "sqlize-migrate": "sequelize db:migrate",
     "test": "jest",
     "dev": "nodemon start.js",
-    "start": "node start.js"
+    "start": "set NODE_ENV=production && node start.js"
   },
   "keywords": [],
   "author": "",
