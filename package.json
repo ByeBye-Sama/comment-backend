@@ -23,12 +23,14 @@
     "graphql-tools": "^4.0.5",
     "mysql2": "^1.6.5",
     "sequelize": "^5.10.1",
-    "sequelize-cli": "^5.5.0"
+    "sequelize-cli": "^5.5.0",
+    "@babel/register": "^7.4.4"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/plugin-transform-runtime": "^7.5.5",
     "@babel/preset-env": "^7.5.4",
+    "@babel/register": "^7.4.4",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.8.0",
     "bili": "^4.8.0",
