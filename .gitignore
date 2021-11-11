@@ -3,6 +3,7 @@ node_modules
 #backend
 .vscode/
 coverage/
+.env
 
 # Icon must end with two \r
 Icon
