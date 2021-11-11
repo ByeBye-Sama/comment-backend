@@ -7,10 +7,10 @@ import db from "./models";
 const server = new ApolloServer({
   typeDefs: gql(typeDefs),
   resolvers,
-  context: { db }
+  context: { db },
 });
 
-const hostname = 'localhost';
+const hostname = "localhost";
 const portServer = process.env.PORT || 4000;
 
 const app = express();
@@ -18,9 +18,10 @@ server.applyMiddleware({ app });
 
 app.use(express.static("app/public"));
 
-db.sequelize.sync(/* {force: true} */).then(() => {
-
+db.sequelize.sync().then(() => {
   app.listen({ port: portServer }, () =>
-    console.log(`🚀 Server ready at http://${hostname}:${portServer}${server.graphqlPath}`)
+    console.log(
+      `🚀 Server ready at http://${hostname}:${portServer}${server.graphqlPath}`
+    )
   );
 });

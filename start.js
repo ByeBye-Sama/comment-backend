@@ -1,5 +1,7 @@
 require("@babel/register")({
-  presets: ["@babel/preset-env"]
+  presets: ["@babel/preset-env"],
 });
 
-module.exports = require('./server.js')
+require("dotenv").config();
+
+module.exports = require("./server.js");

@@ -3,8 +3,6 @@ node_modules
 #backend
 .vscode/
 coverage/
-migrations/
-seeders/
 
 # Icon must end with two \r
 Icon

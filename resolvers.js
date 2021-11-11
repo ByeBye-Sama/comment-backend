@@ -15,28 +15,30 @@ const resolvers = {
     createComment: (parent, { content, userId }, { db }, info) =>
       db.comment.create({
         content: content,
-        userId: userId
+        userId: userId,
       }),
     createUser: (parent, { name, comments }, { db }, info) =>
       db.user.create({
         name: name,
       }),
     updateComment: (parent, { content, id }, { db }, info) =>
-      db.comment.update({
-        content: content
-      },
+      db.comment.update(
+        {
+          content: content,
+        },
         {
           where: {
-            id: id
-          }
-        }),
+            id: id,
+          },
+        }
+      ),
     deleteComment: (parent, { id }, { db }, info) =>
       db.comment.destroy({
         where: {
-          id: id
-        }
-      })
-  }
+          id: id,
+        },
+      }),
+  },
 };
 
-export default resolvers
+export default resolvers;
